@@ -1,0 +1,19 @@
+
+Einheiten Umrechnung.getElementById("mybutton").onclick = function(){
+
+	var myname = document.getElementById("mytext").value
+	
+	print("myname "sind"m-km"km" )<br>
+	print("myname "sind"???"cm" )<br>
+	print("myname "sind"???"nm" )<br>
+	
+	function m-km(m in km){
+	console.log(myname / 1000);
+	
+	function m-cm(m in cm){
+	console.log(myname * 100);
+	
+	function m-nm(m in nm){
+	console.log(myname / 1000);
+	
+	}

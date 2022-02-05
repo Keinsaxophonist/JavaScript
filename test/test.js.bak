@@ -1,0 +1,8 @@
+document.getElementById("mybutton").onclick = function(){
+var zahl = parseInt(0,5);
+/*var tmp = document.getElementById(textfeld).value;*/
+
+
+	document.getElementById("label").innerHTML = zahl; 
+
+}

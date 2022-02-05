@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<title>Hello World</title>
+<h2>My First JavaScript</h2>
+
+<!-- Englisch: https://www.w3schools.com/js/js_examples.asp -->
+<!-- Deutsch: https://wiki.selfhtml.org/wiki/JavaScript -->
+
+
+<script>
+
+
+function print(arg1){
+document.write(arg1);
+}
+
+print("test");
+print("test2");
+
+function print(arg2){
+document.write(arg2);
+}
+
+print("test3");
+print("test4");
+
+</script>
+
+
+
+
+</body>
+</html> 
