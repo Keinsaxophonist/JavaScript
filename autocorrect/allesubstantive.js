@@ -1,0 +1,1 @@
+var worte = ['Abakus','Test']
