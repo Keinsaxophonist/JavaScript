@@ -1,7 +1,9 @@
 document.getElementById("mybutton").onclick = function(){
 var tmp = document.getElementById("text").value;
 var tmp2;
-var tmp3 =['Planet', 'Stern', 'Galaxie'];
+var tmp3 =['Planet'];
+	
+	console.log(worte);
 
 var tmp_array = tmp.split(" ");
 

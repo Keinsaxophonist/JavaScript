@@ -1,6 +1,7 @@
-const names = ['Test','test','Bötz'];
+document.getElementById("button").onclick = function(){
+var names = 'planet';
 
-names.sort();
+/*names.sort();*/
 /*tmp.sort(function(a,b) {
     a = a.toLowerCase();
     b = b.toLowerCase();
@@ -8,5 +9,6 @@ names.sort();
     return a < b ? -1 : 1;
 });*/
 
-console.log(names);
+document.getElementById("label").innerHTML=names;
 
+}
