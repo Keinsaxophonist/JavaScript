@@ -1,0 +1,51 @@
+document.getElementById("button").onclick = function() {
+
+var tmp = document.getElementById("textfeld").value;
+
+	var untertitel=['Willkommen',
+'zur',
+'vierten',
+'Folge',
+'von',
+'Abgespaced.',
+'In',
+'unserem',
+'Podcast',
+'geht',
+'es',
+'ja',
+'um',
+'geschrieben',
+'und',
+'produziert',
+'von',
+'Studio',
+'3',
+'Anna',
+'Bilger,',
+'Julia',
+'Riethammer',
+'und',
+'Vanessa',
+'Löwel ']
+
+
+	/*untertitel = untertitel.replaceAll("?", "");
+	untertitel = untertitel.replaceAll("!", "");
+	untertitel = untertitel.replaceAll(",,", ",");
+	untertitel = untertitel.replaceAll(".", "");*/
+
+
+	let unique = [...new Set(untertitel)];
+	
+	/*tmp2=unique;
+	
+	
+	
+	tmp2 = tmp2.replaceAll("?", "");
+	tmp2 = tmp2.replaceAll("!", "");
+	tmp2 = tmp2.replaceAll(",,", ",");*/
+	
+	
+    document.getElementById("label").innerHTML = unique;
+}
