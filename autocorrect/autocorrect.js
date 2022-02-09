@@ -324,7 +324,6 @@ var tmp3 =[
 'Serie',
 'Shownotes',
 'Sicht',
-'Sie',
 'Signale',
 'Solarpanel',
 'Solarpanelen',
@@ -787,7 +786,6 @@ var tmp3 =[
 'Sekunde',
 'Sekunden',
 'Sichtbares',
-'Sie',
 'Siehe',
 'Skala',
 'So',
@@ -936,7 +934,17 @@ for (var i = 0; i < tmp3_lgth; i++)
 	var substklein = substantiv.toLowerCase();	
 	tmp = tmp.replaceAll(substklein, substantiv);		
 
+	var substantiv = "---"+tmp3[i]+"!";
+	var substklein = substantiv.toLowerCase();	
+	tmp = tmp.replaceAll(substklein, substantiv);
+	
+	var substantiv = "---"+tmp3[i]+"?";
+	var substklein = substantiv.toLowerCase();	
+	tmp = tmp.replaceAll(substklein, substantiv);
+
 }
+
+
 
 tmp = tmp.replaceAll("abgespeist", "Abgespaced");
 
