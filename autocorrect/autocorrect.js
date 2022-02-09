@@ -548,7 +548,6 @@ var tmp3 =[
 'Frühlingspunkt',
 'Frühlingspunktes',
 'Fähigkeit',
-'Für',
 'Galaxis Kulmination ',
 'Gas',
 'Gase',

@@ -942,9 +942,6 @@ for (var i = 0; i < tmp3_lgth; i++)
 	var substklein = substantiv.toLowerCase();	
 	tmp = tmp.replaceAll(substklein, substantiv);
 
-	var substantiv = "\n"+tmp3[i]+"---";
-	var substklein = substantiv.toLowerCase();	
-	tmp = tmp.replaceAll(substklein, substantiv);
 }
 
 
