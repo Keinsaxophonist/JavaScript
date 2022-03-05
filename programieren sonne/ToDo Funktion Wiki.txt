@@ -1,0 +1,22 @@
+
+var r_sonne = 10;
+var a_cube = 3;
+var max = 20;
+var min = max * (-1);
+var cube_vec = [];
+
+for (let i = min; i <= max; i++) {
+	for (let j = min; j <= max; j++) {
+		for (let k = min; k <= max; k++) {
+			var tmp1 = a * i;
+			var tmp2 = a * j;
+			var tmp3 = a * k;
+			var b_vec = Math.sqrt((tmp1*tmp1)+(tmp2*tmp2)+(tmp3*tmp3));
+			
+			if (b_vec < r_sonne){
+			}
+		} 
+	} 
+} 
+
+
