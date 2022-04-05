@@ -1,0 +1,85 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	font-family: Tahoma;
+}
+
+:root {
+	--hue-neutral: 40; 
+	--hue-wrong: 0;		
+	--hue-correct: 165;	
+	--hue-hover: 234;
+}
+
+
+body {
+	--hue: var(--hue-neutral);
+	padding: 0;
+	margin: 0;
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(var(--hue), 96%, 51%);
+	
+}
+
+body.correct{
+	--hue: var(--hue-correct);
+}
+body.wrong{
+	--hue: var(--hue-wrong);
+}
+
+.container {
+	width: 105px;
+	max width: 80%;
+	background-color: white;
+	border-radius: 5px;
+	padding: 6px;
+}
+.buttongrid {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 5px;
+	margin: 5px 0;
+}
+
+.button {
+	--hue: var(--hue-neutral);
+	background-color: hsl(var(--hue), 96%, 51%); 
+	border: 1px solid hsl(var(--hue), 96%, 0%);
+	border-radius: 100px;
+	padding: 5px 10px;
+	
+}
+
+.button:hover { 
+    font-size:17px;
+	border-color: black;
+}
+
+.button.correct {
+	--hue: /*(var(--hue-correct) 48%, 51%)*/ var(--hue-correct); 
+	/*hier möchte ich noch die richtigen Stiftungsfarben einbringen*/
+}
+.button.wrong {
+	--hue: /*(var(--hue-wrong) 94%, 66%)*/ var(--hue-wrong);
+	/*hier möchte ich noch die richtigen Stiftungsfarben einbringen*/
+}
+
+.startbutton, .nextbutton {
+	font.size: 1.5rem;
+	font-weight: bold;
+	padding: 10px 20px;
+	
+}
+.cotrols {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hide {
+	display: none;
+}
