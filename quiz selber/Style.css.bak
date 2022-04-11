@@ -14,7 +14,7 @@
 body {
 	--hue: var(--hue-neutral);
 	padding: 0;
-	margin: 0;
+	margin: 10;
 	display: flex;
 	width: 100vw;
 	height: 100vh;
@@ -32,7 +32,7 @@ body.wrong{
 }
 
 .container {
-	width: 105px;
+	width: 50px;
 	max width: 80%;
 	background-color: white;
 	border-radius: 5px;

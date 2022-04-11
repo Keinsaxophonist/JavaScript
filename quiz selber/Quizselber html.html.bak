@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="Style.css" rel="stylesheet">
+<script defer src="quizselber js.js"></script>
+<title>Quiz</title>
+<h1 id="header">Quiz</h1>
+	
+</head>
+<body> <!-- class="wrong/correct"-->
+	<div class="container">
+		<div id="question-container" class="hide">
+			<div id="question" >Frage</div> 
+			<div id="answer-buttons" class="hide" "class="buttongrid">
+			</div>
+		</div>
+		<button id="answer1" class="hide">Antwort 1</button>
+		<button id="answer2" class="hide">Antwort 2</button>
+		<button id="answers" class="hide">Antwort 1</button>
+		<button id="answers" class="hide">Antwort 2</button>
+		<div class="controls">
+			<button id="startbutton" class="startbutton button">Start</button>
+			<button id="nextbutton" class="nextbutton button hide">Next</button>
+		</div>
+	</div>
+	
+</body>
+</html> 
