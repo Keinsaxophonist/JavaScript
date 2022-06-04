@@ -44,7 +44,7 @@ void loop() {
   d3_status = digitalRead(d3);
   Serial.println(d3_status);
 
-  delay(50);
+
   if (d3_status == 1){
     digitalWrite(led, LOW);
     }else{
@@ -93,49 +93,49 @@ void loop() {
         display.display();
         display.fillCircle(90, 61, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(80, 59, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
                 display.fillCircle(72, 53, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
           display.fillCircle(66, 45, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(64, 35, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(66, 25, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
                 display.fillCircle(72, 17, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(80, 11, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(90, 9, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(100, 11, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
                 display.fillCircle(108, 17, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(114, 25, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(116, 35, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(114, 45, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(108, 53, 4, WHITE);
         display.display();
-        delay(100);
+        delay(10);
         display.fillCircle(100, 59, 4, WHITE);
 
 
@@ -151,7 +151,7 @@ void loop() {
 
 
   
-  display.display();
+
   
 
   /*Serial.print("Gyroscope ");
@@ -171,6 +171,6 @@ void loop() {
 
 
 
-  display.display();
-  delay(100);
+ 
+
 }
