@@ -20,10 +20,6 @@ void setup() {
 
 
 
-
-
-
-
   if (!mpu.begin()) {
     Serial.println("Sensor init failed");
     while (1)
@@ -58,41 +54,8 @@ void loop() {
       };
 
 
-punkt1();
-punkt2();
-punkt3();
-punkt4();
-punkt5();
-punkt6();
-punkt7();
-punkt8();
-punkt9();
-punkt10();
-punkt11();
-punkt12();
-punkt13();
-punkt14();
-punkt15();
-punkt16();
-punkt1();
-delay(20);
-punkt16();
-punkt15();
-punkt14();
-punkt13();
-punkt12();
-punkt11();
-punkt10();
-punkt9();
-punkt8();
-punkt7();
-punkt6();
-punkt5();
-punkt4();
-punkt3();
-punkt2();
-punkt1();
-delay(5000);
+punkt17();
+
   /*Serial.print("Accelerometer ");
   Serial.print("X: ");
   Serial.print(a.acceleration.x, 1);
@@ -571,6 +534,33 @@ display.fillCircle(116, 35, 4, WHITE);
  display.fillCircle(80, 59, 4, WHITE);
 display.fillCircle(80, 11, 4, WHITE);
 display.fillCircle(114, 45, 4, WHITE);
+  display.display();
+  delay(100);
+        }
+
+              void punkt17() {
+
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(112.5, 48, 4, WHITE);
+display.fillCircle(67.4, 48, 4, WHITE);
+display.fillCircle(90, 9, 4, WHITE);
   display.display();
   delay(100);
         }
