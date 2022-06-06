@@ -1,0 +1,37 @@
+var i;
+var j;
+var z;
+var c;
+
+
+for (j = 0; j <= 64;) 
+for (i = 0; i <= 128; i = i + 0.1) {
+
+    i = Math.round(i * 10)/ 10;
+    z = ((i - 90)**2)+((j - 35)**2);
+    z = Math.round(z * 10)/ 10;
+    //z = Math.round(z * 10)/ 10;
+    //z = z.toFixed(2);
+    if ( i == 128){
+        j = j + 0.1;
+        j = Math.round(j * 10)/ 10;
+    }
+   // console.log("#", i, j, z, "#");
+ if (z == 676){
+    console.log(i, j);
+ }
+
+
+
+
+
+
+
+
+/*console.log(i);
+console.log(j);
+console.log(z);
+console.log("#");
+console.log("#");*/
+      
+}
