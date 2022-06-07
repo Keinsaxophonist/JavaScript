@@ -1,0 +1,1333 @@
+//zuvor alle includes downloaden
+
+#include <Adafruit_MPU6050.h>
+#include <Adafruit_SSD1306.h>
+#include <Adafruit_Sensor.h>
+
+int d3 = 0;
+int d3_status;
+int led = 12;
+Adafruit_MPU6050 mpu;
+Adafruit_SSD1306 display = Adafruit_SSD1306(128, 64, &Wire);
+
+void setup() {
+  Serial.begin(115200);
+  // while (!Serial);
+  Serial.println("MPU6050 OLED demo");
+  pinMode(12, OUTPUT);
+
+
+
+
+
+
+
+
+
+  if (!mpu.begin()) {
+    Serial.println("Sensor init failed");
+    while (1)
+      yield();
+  }
+  Serial.println("Found a MPU-6050 sensor");
+  
+  // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
+  if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3C for 128x32
+    Serial.println(F("SSD1306 allocation failed"));
+    for (;;)
+      ; // Don't proceed, loop forever
+  }
+  display.display();
+  delay(500); // Pause for 2 seconds
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setRotation(0);
+}
+
+ 
+    
+void loop() {
+  sensors_event_t a, g, temp;
+  mpu.getEvent(&a, &g, &temp);
+  d3_status = digitalRead(d3);
+  Serial.println(d3_status);
+  if (d3_status == 1){
+    digitalWrite(led, LOW);
+    }else{
+    digitalWrite(led, HIGH);
+      };
+
+
+punkt1();
+punkt2();
+punkt3();
+punkt4();
+punkt5();
+punkt6();
+punkt7();
+punkt8();
+punkt9();
+punkt10();
+punkt11();
+punkt12();
+punkt13();
+punkt14();
+punkt15();
+punkt16();
+punkt1();
+delay(2000);
+
+
+  /*Serial.print("Accelerometer ");
+  Serial.print("X: ");
+  Serial.print(a.acceleration.x, 1);
+  Serial.print(" m/s^2, ");
+  Serial.print("Y: ");
+  Serial.print(a.acceleration.y, 1);
+  Serial.print(" m/s^2, ");
+  Serial.print("Z: ");
+  Serial.print(a.acceleration.z, 1);
+  Serial.println(" m/s^2");*/
+
+
+ 
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+ // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+}
+
+  void warte() {
+    delay(100);
+    }
+warte();}
+
+  void punkt1(){
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.display();
+  display.fillCircle(89.8, 9, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt2() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(89.9, 9, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt3() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(90, 9, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt4() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(90.1, 9, 4, WHITE);
+  display.display();
+ warte();}
+  
+  void punkt5() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(90.2, 9, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt6() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+display.fillCircle(83.6, 9.8, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt7() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(96.4, 9.8, 4, WHITE);
+  display.display();
+ warte();}
+  
+  void punkt8() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(80, 11, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt9() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(100, 11, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt10() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(76.8, 12.6, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt11() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(103.2, 12.6, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt12() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(74.4, 14.2, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt13() {
+   display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(105.6, 14.2, 4, WHITE);
+  display.display();
+  warte();}
+  
+  void punkt14() {
+    display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(69.2, 19.4, 4, WHITE);
+  display.display();
+  warte();}
+  
+    void punkt15() {
+      display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(110.8, 19.4, 4, WHITE);
+  display.display();
+  warte();}
+  
+      void punkt16() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(67.6, 21.8, 4, WHITE);
+  display.display();
+  warte();}
+              void punkt16() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(112.4, 21.8, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt17() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(66, 25, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt18() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(114, 25, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt19() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(64.8, 28.6, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt20() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(115.2, 28.6, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt21() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(64, 34.8, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt22() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(116, 34.8, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt23() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(64, 34.9, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt24() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(116, 34.9, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt25() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(64, 35, 4, WHITE);
+  display.display();
+ warte();}
+        void punkt26() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(116, 35, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt27() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(64, 35.1, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt28() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(116, 35.1, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt29() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  ddisplay.fillCircle(64, 35.2, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt30() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(116, 35.2, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt31() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(64.8, 41.4, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt32() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(115.2, 41.4, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt33() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(66, 45, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt34() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(114, 45, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt35() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(67.6, 48.2, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt36() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(112.4, 48.2, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt37() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(69.2, 50.6, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt38() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(110.8, 50.6, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt39() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(74.4, 55.8, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt40() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(105.6, 55.8, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt41() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(76.8, 57.4, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt42() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(103.2, 57.4, 4, WHITE);
+  display.display();
+ warte();}
+        void punkt43() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  ddisplay.fillCircle(80, 59, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt44() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+ display.fillCircle(100, 59, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt45() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(83.6, 60.2, 4, WHITE);
+  display.display();
+ warte();}
+        void punkt46() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(96.4, 60.2, 4, WHITE);
+  display.display();
+warte();}
+        void punkt47() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  ddisplay.fillCircle(89.8, 61, 4, WHITE);
+  display.display();
+  warte();}
+        void punkt48() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(89.9, 61, 4, WHITE);
+  display.display();
+warte();}
+        void punkt49() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(90, 61, 4, WHITE);
+  display.display();
+warte();}
+        void punkt50() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(90.1, 61, 4, WHITE);
+  display.display();
+warte();}
+        void punkt51() {
+         display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+  // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
+  display.fillCircle(90.2, 61, 4, WHITE);
+  display.display();
+warte();}
+
+
