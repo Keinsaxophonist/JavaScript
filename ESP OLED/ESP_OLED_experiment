@@ -44,6 +44,7 @@ void setup() {
   display.setRotation(0);
 }
 
+
  
     
 void loop() {
@@ -52,32 +53,99 @@ void loop() {
   d3_status = digitalRead(d3);
   Serial.println(d3_status);
   if (d3_status == 1){
-    digitalWrite(led, LOW);
-    }else{
-    digitalWrite(led, HIGH);
-      };
 
 
+ /*punkt1();
+  //part2();
+  //punkt3();
+  punkt4();
+  //punkt5();
+  punkt6();
+  //punkt7();
+  punkt8();
+  //punkt9();
+  punkt10();
+  //punkt11();
+  punkt12();
+  //punkt13();
+  punkt14();
+  //punkt15();
+  punkt16();
+  punkt17();
+  //punkt18();
+  punkt19();
+  //punkt20();
+  punkt21();
+  //punkt22();
+  //punkt23();
+  //punkt24();
+  //punkt25();
+  //punkt26();
+  
+  punkt27();
+ // punkt28();
+  punkt29();
+  //punkt30();
+  punkt31();
+  //punkt32();
+  punkt33();
+  //punkt34();
+  punkt35();
+  //punkt36();
+  punkt37();
+  //punkt38();
+  punkt39();
+  //punkt40();
+  punkt41();
+  //punkt42();
+  punkt43();
+  //punkt44();
+  punkt45();
+  //punkt46();
+  punkt47();
+  //punkt48();
+  punkt49();
+  //punkt52();*/
+
+punkt52();
+  punkt50();
+  punkt48();
+  punkt46();
+  punkt44();
+  punkt42();
+  punkt40();
+  punkt38();
+  punkt36();
+  punkt34();
+  punkt32();
+  punkt30();
+  punkt28();
+  punkt26();
 punkt1();
-punkt2();
-punkt3();
-punkt4();
-punkt5();
-punkt6();
-punkt7();
-punkt8();
-punkt9();
-punkt10();
-punkt11();
-punkt12();
-punkt13();
-punkt14();
-punkt15();
-punkt16();
-punkt1();
-delay(2000);
-
-
+  //punkt2();
+  punkt3();
+  //punkt4();
+  punkt5();
+  //punkt6();
+  punkt7();
+  //punkt8();
+  punkt9();
+  //punkt10();
+  punkt11();
+  //punkt12();
+  //punkt13();
+  punkt14();
+  //punkt15();
+  punkt16();
+  //punkt17();
+  punkt18();
+  //punkt19();
+  punkt20();
+  //punkt21();
+  punkt22();
+  punkt23();
+  punkt24();
+  //punkt25();
   /*Serial.print("Accelerometer ");
   Serial.print("X: ");
   Serial.print(a.acceleration.x, 1);
@@ -110,12 +178,12 @@ delay(2000);
   //display.fillCircle(90, 9, 4, WHITE);
  // display.fillCircle(111, 51, 4, WHITE);
   //display.fillCircle(70, 51, 4, WHITE);
+  }
 }
-
-  void warte() {
-    delay(100);
+  void warte(){
+    delay(10);
     }
-warte();}
+
 
   void punkt1(){
   display.clearDisplay();
@@ -140,7 +208,8 @@ warte();}
   display.display();
   display.fillCircle(89.8, 9, 4, WHITE);
   display.display();
-  warte();}
+  warte();
+  }
   
   void punkt2() {
   display.clearDisplay();
@@ -501,29 +570,7 @@ display.fillCircle(83.6, 9.8, 4, WHITE);
   display.fillCircle(67.6, 21.8, 4, WHITE);
   display.display();
   warte();}
-              void punkt16() {
-         display.clearDisplay();
-  display.setTextSize(1);
-  display.setTextColor(WHITE);
-  display.setCursor(0,0);
-  display.println("Stiftung");
-  display.println("Planetarium");
-  display.println("Berlin");
-  display.println("");
-  display.println("");
-  display.println("ZGP");
-  display.println("PAI");
-  display.println("ASTW");
-  //display.println("Wasserstoff");
-  //display.drawCircle(100, 35, 30, WHITE);
-  display.drawCircle(90, 35, 26, WHITE);
-  display.fillCircle(90, 35, 9, WHITE);
-  //display.fillCircle(90, 9, 4, WHITE);
-  // display.fillCircle(111, 51, 4, WHITE);
-  //display.fillCircle(70, 51, 4, WHITE);
-  display.fillCircle(112.4, 21.8, 4, WHITE);
-  display.display();
-  warte();}
+
         void punkt17() {
          display.clearDisplay();
   display.setTextSize(1);
@@ -820,7 +867,7 @@ display.fillCircle(83.6, 9.8, 4, WHITE);
   //display.fillCircle(90, 9, 4, WHITE);
   // display.fillCircle(111, 51, 4, WHITE);
   //display.fillCircle(70, 51, 4, WHITE);
-  ddisplay.fillCircle(64, 35.2, 4, WHITE);
+  display.fillCircle(64, 35.2, 4, WHITE);
   display.display();
   warte();}
         void punkt30() {
@@ -1142,7 +1189,7 @@ display.fillCircle(83.6, 9.8, 4, WHITE);
   //display.fillCircle(90, 9, 4, WHITE);
   // display.fillCircle(111, 51, 4, WHITE);
   //display.fillCircle(70, 51, 4, WHITE);
-  ddisplay.fillCircle(80, 59, 4, WHITE);
+  display.fillCircle(80, 59, 4, WHITE);
   display.display();
   warte();}
         void punkt44() {
@@ -1234,7 +1281,7 @@ warte();}
   //display.fillCircle(90, 9, 4, WHITE);
   // display.fillCircle(111, 51, 4, WHITE);
   //display.fillCircle(70, 51, 4, WHITE);
-  ddisplay.fillCircle(89.8, 61, 4, WHITE);
+  display.fillCircle(89.8, 61, 4, WHITE);
   display.display();
   warte();}
         void punkt48() {
@@ -1306,7 +1353,8 @@ warte();}
   display.fillCircle(90.1, 61, 4, WHITE);
   display.display();
 warte();}
-        void punkt51() {
+
+              void punkt52() {
          display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE);
@@ -1328,6 +1376,6 @@ warte();}
   //display.fillCircle(70, 51, 4, WHITE);
   display.fillCircle(90.2, 61, 4, WHITE);
   display.display();
-warte();}
+  warte();}
 
-
+  
