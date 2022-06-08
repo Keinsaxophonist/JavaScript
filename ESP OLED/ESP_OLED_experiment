@@ -54,111 +54,6 @@ void loop() {
   Serial.println(d3_status);
   if (d3_status == 1){
 
-
- /*punkt1();
-  //part2();
-  //punkt3();
-  punkt4();
-  //punkt5();
-  punkt6();
-  //punkt7();
-  punkt8();
-  //punkt9();
-  punkt10();
-  //punkt11();
-  punkt12();
-  //punkt13();
-  punkt14();
-  //punkt15();
-  punkt16();
-  punkt17();
-  //punkt18();
-  punkt19();
-  //punkt20();
-  punkt21();
-  //punkt22();
-  //punkt23();
-  //punkt24();
-  //punkt25();
-  //punkt26();
-  
-  punkt27();
- // punkt28();
-  punkt29();
-  //punkt30();
-  punkt31();
-  //punkt32();
-  punkt33();
-  //punkt34();
-  punkt35();
-  //punkt36();
-  punkt37();
-  //punkt38();
-  punkt39();
-  //punkt40();
-  punkt41();
-  //punkt42();
-  punkt43();
-  //punkt44();
-  punkt45();
-  //punkt46();
-  punkt47();
-  //punkt48();
-  punkt49();
-  //punkt52();*/
-
-punkt52();
-  punkt50();
-  punkt48();
-  punkt46();
-  punkt44();
-  punkt42();
-  punkt40();
-  punkt38();
-  punkt36();
-  punkt34();
-  punkt32();
-  punkt30();
-  punkt28();
-  punkt26();
-punkt1();
-  //punkt2();
-  punkt3();
-  //punkt4();
-  punkt5();
-  //punkt6();
-  punkt7();
-  //punkt8();
-  punkt9();
-  //punkt10();
-  punkt11();
-  //punkt12();
-  //punkt13();
-  punkt14();
-  //punkt15();
-  punkt16();
-  //punkt17();
-  punkt18();
-  //punkt19();
-  punkt20();
-  //punkt21();
-  punkt22();
-  punkt23();
-  punkt24();
-  //punkt25();
-  /*Serial.print("Accelerometer ");
-  Serial.print("X: ");
-  Serial.print(a.acceleration.x, 1);
-  Serial.print(" m/s^2, ");
-  Serial.print("Y: ");
-  Serial.print(a.acceleration.y, 1);
-  Serial.print(" m/s^2, ");
-  Serial.print("Z: ");
-  Serial.print(a.acceleration.z, 1);
-  Serial.println(" m/s^2");*/
-
-
- 
   display.clearDisplay();
   display.setTextSize(1);
   display.setTextColor(WHITE);
@@ -178,6 +73,61 @@ punkt1();
   //display.fillCircle(90, 9, 4, WHITE);
  // display.fillCircle(111, 51, 4, WHITE);
   //display.fillCircle(70, 51, 4, WHITE);
+
+
+
+
+
+
+  punkt1();
+  punkt4();
+  punkt6();
+  punkt8();
+  punkt10();
+  punkt12();
+  punkt14();
+  punkt19();
+  punkt21();
+  punkt27();
+  punkt29();
+  punkt31();
+  punkt33();
+  punkt35();
+  punkt37();
+  punkt39();
+  punkt41();
+  punkt43();
+  punkt45();
+  punkt47();
+  punkt49();
+  punkt52();
+  punkt46();
+  punkt44();
+  punkt42();
+  punkt40();
+  punkt38();
+  punkt36();
+  punkt34();
+  punkt32();
+  punkt30();
+  punkt28();
+  punkt26();
+
+ 
+  punkt24();
+  punkt22();
+  punkt20();
+  punkt18();
+  punkt15();
+  punkt13();
+  punkt11();
+  punkt9();
+  punkt7();
+  punkt5();
+  punkt3();
+
+
+
   }
 }
   void warte(){
@@ -521,7 +471,7 @@ display.fillCircle(83.6, 9.8, 4, WHITE);
   //display.fillCircle(70, 51, 4, WHITE);
  display.fillCircle(69.2, 19.4, 4, WHITE);
   display.display();
-  warte();}
+  delay(5);}
   
     void punkt15() {
       display.clearDisplay();
@@ -639,7 +589,7 @@ display.fillCircle(83.6, 9.8, 4, WHITE);
   //display.fillCircle(70, 51, 4, WHITE);
   display.fillCircle(64.8, 28.6, 4, WHITE);
   display.display();
-  warte();}
+  delay(5);}
         void punkt20() {
          display.clearDisplay();
   display.setTextSize(1);
