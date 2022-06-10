@@ -12,44 +12,11 @@ Adafruit_SSD1306 display = Adafruit_SSD1306(128, 64, &Wire);
 
 void setup() {
   Serial.begin(115200);
-  // while (!Serial);
-  Serial.println("MPU6050 OLED demo");
-  pinMode(12, OUTPUT);
-
-
-
-
-
-
-
-
-
-  if (!mpu.begin()) {
-    Serial.println("Sensor init failed");
-    while (1)
-      yield();
-  }
-  Serial.println("Found a MPU-6050 sensor");
-  
-  // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
-  if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3C for 128x32
-    Serial.println(F("SSD1306 allocation failed"));
-    for (;;)
-      ; // Don't proceed, loop forever
-  }
-  display.display();
-  delay(500); // Pause for 2 seconds
-  display.setTextSize(1);
-  display.setTextColor(WHITE);
-  display.setRotation(0);
 }
-
  
     
 void loop() {
-  sensors_event_t a, g, temp;
-  mpu.getEvent(&a, &g, &temp);
-
+  delay(100);
   int i;
   int x;
   int y;
@@ -68,8 +35,24 @@ void loop() {
 
   Serial.println(x, y);
   display.clearDisplay();
-  display.display();
-  display.fillCircle(90, 35, 40, WHITE);
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+  display.println("Stiftung");
+  display.println("Planetarium");
+  display.println("Berlin");
+  display.println("");
+  display.println("");
+  display.println("ZGP");
+  display.println("PAI");
+  display.println("ASTW");
+  //display.println("Wasserstoff");
+  //display.drawCircle(100, 35, 30, WHITE);
+  display.drawCircle(90, 35, 26, WHITE);
+  display.fillCircle(90, 35, 9, WHITE);
+  //display.fillCircle(90, 9, 4, WHITE);
+ // display.fillCircle(111, 51, 4, WHITE);
+  //display.fillCircle(70, 51, 4, WHITE);
     
     }
 
